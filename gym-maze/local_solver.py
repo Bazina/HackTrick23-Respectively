@@ -49,7 +49,7 @@ def local_inference(riddle_solvers):
 if __name__ == "__main__":
 
     sample_maze = np.load("hackathon_sample.npy")
-    agent_id = "9" # add your agent id here
+    agent_id = "U3VyPaWVF0" # add your agent id here
     
     manager = MazeManager()
     manager.init_maze(agent_id, maze_cells=sample_maze)
