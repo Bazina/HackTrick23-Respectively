@@ -1,11 +1,12 @@
 from scapy.all import rdpcap, DNSQR, IP
 import base64
+from io import BytesIO
 import io
+from amazoncaptcha import AmazonCaptcha
+from PIL import Image
 import jwt
 from cryptography.hazmat.primitives.serialization import load_pem_public_key
 from cryptography.hazmat.backends import default_backend
-
-
 import numpy as np
 import time
 
