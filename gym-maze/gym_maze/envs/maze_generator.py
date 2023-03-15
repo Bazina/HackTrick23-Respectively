@@ -87,7 +87,7 @@ def validate_maze(maze):
     return True
 
 
-if __name__ == "__main__":
+def get_maze():
     # DO NOT CHANGE
     # USE ONLY FOR GENERATING RANDOM/SAMPLE MAZES
     while(True):
@@ -96,6 +96,6 @@ if __name__ == "__main__":
         if is_validated:
             break
 
-    print(maze.maze_cells)
+    return maze.maze_cells
     np.save("../../sample_maze.npy", maze.maze_cells)
 
